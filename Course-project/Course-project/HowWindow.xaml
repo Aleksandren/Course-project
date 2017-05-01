@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_project"
         mc:Ignorable="d"
-         Title="HowWindow" Height="456.707" Width="682.073">
+         Title="HowWindow" Height="489.011" Width="768.959">
     <Grid>
         <TabControl x:Name="tabControl">
             <TabItem Header="TabItem">

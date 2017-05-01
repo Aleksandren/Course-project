@@ -5,10 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_project"
         mc:Ignorable="d"
-         Title="Вычисление выражеий" Height="532.707" Width="836.473" Background="#FFF9F9F9" Foreground="White" Visibility="Visible"  WindowStartupLocation="CenterScreen">
+        Title="Вычисление выражеий" Height="532.707" Width="836.473" Background="#FFF9F9F9" Foreground="White" Visibility="Visible"  WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Storyboard x:Key="sbShowRightMenu" >
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,-150,0" To="0,0,0,0" DecelerationRatio=".9" Duration="0:0:1" />
+        </Storyboard>
+        <Storyboard x:Key="sbHideRightMenu">
+            <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,0,0" To="0,0,-150,0" AccelerationRatio=".9" Duration="0:0:1" />
+        </Storyboard>
+    </Window.Resources>
     <Grid Margin="0,0,0.8,-0.2">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="39" Margin="20,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="477" FontFamily="Swis721 Hv BT" FontSize="22" PreviewTextInput="textBox_PreviewTextInput_1"/>
-        <Grid Margin="55,112,413.6,210.4" Background="#FFF9F9F9">
+        <TextBox x:Name="textBox" Margin="55,53,300,0" TextWrapping="Wrap" FontFamily="Swis721 Hv BT" FontSize="22" PreviewTextInput="textBox_PreviewTextInput_1"  MinHeight="20" MinWidth="200" Height="50" VerticalAlignment="Top">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.102"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Grid Margin="55,150,300,70" Background="#FFF9F9F9">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -25,7 +42,7 @@
             <Button x:Name="btn_1" Grid.Row="2" Grid.Column="0" Content="1"  Click="btn_1_Click" Background="#FFF9F9F9"/>
             <Button x:Name="btn_2" Grid.Row="2" Grid.Column="1" Content="2"  Click="btn_2_Click" Background="#FFF9F9F9"/>
             <Button x:Name="btn_3" Grid.Row="2" Grid.Column="2" Content="3"  Click="btn_3_Click" Background="#FFF9F9F9" />
-            <Button x:Name="btn_4" Grid.Row="1" Grid.Column="0"  Content="4"  Click="btn_4_Click" Background="#FFF9F9F9"/>
+            <Button x:Name="btn_4" Grid.Row="1" Grid.Column="0" Content="4" Click="btn_4_Click" Background="#FFF9F9F9"/>
             <Button x:Name="btn_5" Grid.Row="1" Grid.Column="1" Content="5"  Click="btn_5_Click" Background="#FFF9F9F9"/>
             <Button x:Name="btn_6" Grid.Row="1" Grid.Column="2" Content="6"  Click="btn_6_Click" Background="#FFF9F9F9"/>
             <Button x:Name="btn_7" Grid.Row="0" Grid.Column="0" Content="7"  Click="btn_7_Click" Background="#FFF9F9F9"/>
@@ -43,8 +60,15 @@
             <Button x:Name="btn_pow" Grid.Row="0" Grid.Column="4" Content="^"  Click="btn_pow_Click" Background="#FFF9F9F9"/>
             <Button x:Name="btn_equal" Grid.Row="3" Grid.Column="2" Content="="  Click="btn_equal_Click" Background="#FFF9F9F9"/>
         </Grid>
-        <Button x:Name="button" Content="Как это работает?" HorizontalAlignment="Left" Margin="481,281,0,0" VerticalAlignment="Top" Width="107" Height="23" Click="button_Click"/>
+        <StackPanel Panel.ZIndex="2" Name="pnlRightMenu" Orientation="Horizontal" Height="400" HorizontalAlignment="Right" Margin="0,0,-150,0">
+            <Grid>
+                <Button Name="btnRightMenuHide" Width="48" Height="48" Click="btnRightMenuHide_Click" Content="Hide" Margin="0,0,0,352" Visibility="Hidden"/>
+                <Button Name="btnRightMenuShow" Width="48" Height="48" Click="btnRightMenuShow_Click" Content="Show" Margin="0,0,0,352"/>
+            </Grid>
+            <Border BorderBrush="#FFF9F9F9" BorderThickness="1" Width="150" Background="#FFF9F9F9" >
+                <Button x:Name="button" Content="Как это работает?" HorizontalAlignment="Right" Margin="0,0,20.6,132.2" VerticalAlignment="Bottom" Width="107" Height="23" Click="button_Click"/>
+            </Border>
+        </StackPanel>
         <Label x:Name="label" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="27" Width="836"/>
-
     </Grid>
 </Window>
