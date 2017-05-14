@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Course_project
 {
     /// <summary>
-    /// Логика взаимодействия для HowWindow.xaml
+    /// Логика взаимодействия для test.xaml
     /// </summary>
-    public partial class HowWindow : Window
+    public partial class test : Window
     {
-        public HowWindow()
+        public test()
         {
             InitializeComponent();
         }
