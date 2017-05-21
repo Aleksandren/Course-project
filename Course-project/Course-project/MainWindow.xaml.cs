@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Медведский А.В. 52492 Трансляция и вычисление произвольных арифметических выражений.
+//Главное окно
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -164,9 +167,15 @@ namespace Course_project
             }
         }
 
-        private void showHelp_Click(object sender, RoutedEventArgs e)
+        private void ShowHelp_Click(object sender, RoutedEventArgs e)
         {
           Process.Start("Help.chm");
+        }
+
+        private void ShowTest_Click(object sender, RoutedEventArgs e)
+        {
+            Test test = new Test();
+            test.Show();
         }
     }
 

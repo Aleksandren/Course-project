@@ -39,26 +39,26 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btn_1" Grid.Row="2" Grid.Column="0" Content="1"  Click="btn_1_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_2" Grid.Row="2" Grid.Column="1" Content="2"  Click="btn_2_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_3" Grid.Row="2" Grid.Column="2" Content="3"  Click="btn_3_Click" Background="#FFF9F9F9" />
-            <Button x:Name="btn_4" Grid.Row="1" Grid.Column="0" Content="4" Click="btn_4_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_5" Grid.Row="1" Grid.Column="1" Content="5"  Click="btn_5_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_6" Grid.Row="1" Grid.Column="2" Content="6"  Click="btn_6_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_7" Grid.Row="0" Grid.Column="0" Content="7"  Click="btn_7_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_8" Grid.Row="0" Grid.Column="1" Content="8"  Click="btn_8_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_9" Grid.Row="0" Grid.Column="2" Content="9"  Click="btn_9_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_0" Grid.Row="3" Grid.Column="1" Content="0"  Click="btn_0_Click" Background="#FFF9F9F9" />
-            <Button x:Name="btn_dot" Grid.Row="3" Grid.Column="0" Content="," Click="btn_dot_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_del" Grid.Row="0" Grid.Column="3" Content="delete" Click="btn_del_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_plus" Grid.Row="1" Grid.Column="3" Content="+"  Click="btn_plus_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_min" Grid.Row="1" Grid.Column="4" Content="-"  Click="btn_min_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_mul" Grid.Row="2" Grid.Column="3" Content="*"  Click="btn_mul_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_div" Grid.Row="2" Grid.Column="4" Content="/"  Click="btn_div_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_sub_1" Grid.Row="3" Grid.Column="3" Content="("  Click="btn_sub_1_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_sub_2" Grid.Row="3" Grid.Column="4" Content=")"  Click="btn_sub_2_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_pow" Grid.Row="0" Grid.Column="4" Content="^"  Click="btn_pow_Click" Background="#FFF9F9F9"/>
-            <Button x:Name="btn_equal" Grid.Row="3" Grid.Column="2" Content="="  Click="btn_equal_Click" Background="#FFF9F9F9"/>
+            <Button x:Name="btn_1" Grid.Row="2" Grid.Column="0" Content="1"  Click="btn_1_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_2" Grid.Row="2" Grid.Column="1" Content="2"  Click="btn_2_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_3" Grid.Row="2" Grid.Column="2" Content="3"  Click="btn_3_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_4" Grid.Row="1" Grid.Column="0" Content="4" Click="btn_4_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_5" Grid.Row="1" Grid.Column="1" Content="5"  Click="btn_5_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_6" Grid.Row="1" Grid.Column="2" Content="6"  Click="btn_6_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_7" Grid.Row="0" Grid.Column="0" Content="7"  Click="btn_7_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_8" Grid.Row="0" Grid.Column="1" Content="8"  Click="btn_8_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_9" Grid.Row="0" Grid.Column="2" Content="9"  Click="btn_9_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_0" Grid.Row="3" Grid.Column="1" Content="0"  Click="btn_0_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_dot" Grid.Row="3" Grid.Column="0" Content="," Click="btn_dot_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_del" Grid.Row="0" Grid.Column="3" Content="delete" Click="btn_del_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_plus" Grid.Row="1" Grid.Column="3" Content="+"  Click="btn_plus_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_min" Grid.Row="1" Grid.Column="4" Content="-"  Click="btn_min_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_mul" Grid.Row="2" Grid.Column="3" Content="*"  Click="btn_mul_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_div" Grid.Row="2" Grid.Column="4" Content="/"  Click="btn_div_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_sub_1" Grid.Row="3" Grid.Column="3" Content="("  Click="btn_sub_1_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_sub_2" Grid.Row="3" Grid.Column="4" Content=")"  Click="btn_sub_2_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_pow" Grid.Row="0" Grid.Column="4" Content="^"  Click="btn_pow_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
+            <Button x:Name="btn_equal" Grid.Row="3" Grid.Column="2" Content="="  Click="btn_equal_Click" Background="#FFF9F9F9" FontFamily="Swis721 Hv BT" FontSize="20"/>
         </Grid>
         <StackPanel Panel.ZIndex="2" Name="pnlRightMenu" Orientation="Horizontal" Height="400" HorizontalAlignment="Right" Margin="0,0,-150,0">
             <Grid>
@@ -72,8 +72,8 @@
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Button x:Name="showHelp" Content="Как это работает?" Grid.Row="0" Background="#FFF9F9F9" Height="31" VerticalAlignment="Top" Margin="0,0,1,0" Click="showHelp_Click"/>
-                    <Button x:Name="Test" Content="Тест" Grid.Row="1" Background="#FFF9F9F9"/>
+                    <Button x:Name="showHelp" Content="Как это работает?" Grid.Row="0" Background="#FFF9F9F9" Height="31" VerticalAlignment="Top" Margin="0,0,1,0" Click="ShowHelp_Click"/>
+                    <Button x:Name="Test" Content="Тест" Grid.Row="1" Background="#FFF9F9F9" Click="ShowTest_Click"/>
                     <Label x:Name="name" Content="Create by Aleksander" Grid.Row="1" Margin="0,31.8,0,-45.6" Grid.RowSpan="2" Background="#FFF9F9F9"/>
                 </Grid>
             </Border>
