@@ -61,12 +61,52 @@ namespace Course_project.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit__1_ {
+            get {
+                object obj = ResourceManager.GetObject("exit__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
         internal static byte[] Help {
             get {
                 object obj = ResourceManager.GetObject("Help", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap left {
+            get {
+                object obj = ResourceManager.GetObject("left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap right {
+            get {
+                object obj = ResourceManager.GetObject("right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap timer {
+            get {
+                object obj = ResourceManager.GetObject("timer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

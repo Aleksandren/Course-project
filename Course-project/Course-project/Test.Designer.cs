@@ -54,6 +54,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox_Result = new System.Windows.Forms.GroupBox();
+            this.lbl_Result = new System.Windows.Forms.Label();
             this.btn_resOK = new System.Windows.Forms.Button();
             this.checkBox_res5 = new System.Windows.Forms.CheckBox();
             this.checkBox_res4 = new System.Windows.Forms.CheckBox();
@@ -69,6 +70,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox_Question5 = new System.Windows.Forms.GroupBox();
+            this.textBox_ex5 = new System.Windows.Forms.TextBox();
+            this.lbl_ex5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox_Question4 = new System.Windows.Forms.GroupBox();
             this.textBox_ex4 = new System.Windows.Forms.TextBox();
@@ -79,9 +82,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.lbl_Timer = new System.Windows.Forms.Label();
-            this.lbl_Result = new System.Windows.Forms.Label();
-            this.textBox_ex5 = new System.Windows.Forms.TextBox();
-            this.lbl_ex5 = new System.Windows.Forms.Label();
             this.groupBox_Interface.SuspendLayout();
             this.groupBox_Inform.SuspendLayout();
             this.groupBox_Question3.SuspendLayout();
@@ -114,52 +114,62 @@
             // 
             // btn_timer
             // 
+            this.btn_timer.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_timer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_timer.BackgroundImage")));
+            this.btn_timer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_timer.Location = new System.Drawing.Point(195, 38);
             this.btn_timer.Name = "btn_timer";
             this.btn_timer.Size = new System.Drawing.Size(82, 80);
             this.btn_timer.TabIndex = 10;
-            this.btn_timer.Text = "Таймер";
-            this.btn_timer.UseVisualStyleBackColor = true;
+            this.btn_timer.UseVisualStyleBackColor = false;
             this.btn_timer.Click += new System.EventHandler(this.btn_timer_Click);
             // 
             // btn_exit
             // 
+            this.btn_exit.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_exit.BackgroundImage = global::Course_project.Properties.Resources.exit__1_;
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_exit.Location = new System.Drawing.Point(626, 38);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(82, 80);
+            this.btn_exit.Size = new System.Drawing.Size(81, 80);
             this.btn_exit.TabIndex = 9;
-            this.btn_exit.Text = "Выход";
-            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // btn_next
             // 
+            this.btn_next.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_next.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_next.BackgroundImage")));
+            this.btn_next.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_next.Location = new System.Drawing.Point(481, 38);
             this.btn_next.Name = "btn_next";
             this.btn_next.Size = new System.Drawing.Size(82, 80);
             this.btn_next.TabIndex = 6;
-            this.btn_next.Text = "Следую";
-            this.btn_next.UseVisualStyleBackColor = true;
+            this.btn_next.UseVisualStyleBackColor = false;
             this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
             // btn_back
             // 
+            this.btn_back.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_back.BackgroundImage")));
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_back.Location = new System.Drawing.Point(345, 38);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(82, 80);
             this.btn_back.TabIndex = 5;
-            this.btn_back.Text = "назад";
-            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // btn_clock
             // 
+            this.btn_clock.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_clock.BackgroundImage = global::Course_project.Properties.Resources.timer;
+            this.btn_clock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_clock.Location = new System.Drawing.Point(195, 38);
             this.btn_clock.Name = "btn_clock";
             this.btn_clock.Size = new System.Drawing.Size(82, 80);
             this.btn_clock.TabIndex = 2;
-            this.btn_clock.Text = "Таймер";
-            this.btn_clock.UseVisualStyleBackColor = true;
+            this.btn_clock.UseVisualStyleBackColor = false;
             this.btn_clock.Click += new System.EventHandler(this.btn_clock_Click);
             // 
             // groupBox_Inform
@@ -260,7 +270,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(664, 88);
             this.label7.TabIndex = 20;
-            this.label7.Text = "В каком году была предложена постфиксная нотация?";
+            this.label7.Text = "В каком году была предложена польская нотация?";
             // 
             // label6
             // 
@@ -358,6 +368,14 @@
             this.groupBox_Result.TabIndex = 16;
             this.groupBox_Result.TabStop = false;
             this.groupBox_Result.Visible = false;
+            // 
+            // lbl_Result
+            // 
+            this.lbl_Result.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_Result.Location = new System.Drawing.Point(359, 87);
+            this.lbl_Result.Name = "lbl_Result";
+            this.lbl_Result.Size = new System.Drawing.Size(215, 56);
+            this.lbl_Result.TabIndex = 27;
             // 
             // btn_resOK
             // 
@@ -507,7 +525,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(561, 46);
             this.label5.TabIndex = 16;
-            this.label5.Text = "Кто предложил постфиксную нотацию?";
+            this.label5.Text = "Кто предложил польскую нотацию?";
             // 
             // label4
             // 
@@ -532,6 +550,23 @@
             this.groupBox_Question5.TabIndex = 12;
             this.groupBox_Question5.TabStop = false;
             this.groupBox_Question5.Visible = false;
+            // 
+            // textBox_ex5
+            // 
+            this.textBox_ex5.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_ex5.Location = new System.Drawing.Point(62, 212);
+            this.textBox_ex5.Name = "textBox_ex5";
+            this.textBox_ex5.Size = new System.Drawing.Size(103, 35);
+            this.textBox_ex5.TabIndex = 23;
+            // 
+            // lbl_ex5
+            // 
+            this.lbl_ex5.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_ex5.Location = new System.Drawing.Point(57, 125);
+            this.lbl_ex5.Name = "lbl_ex5";
+            this.lbl_ex5.Size = new System.Drawing.Size(636, 51);
+            this.lbl_ex5.TabIndex = 22;
+            this.lbl_ex5.Text = "Вычислить значение выражения 7 5 2 - 4 * +. ";
             // 
             // label10
             // 
@@ -642,31 +677,6 @@
             this.lbl_Timer.TabIndex = 21;
             this.lbl_Timer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl_Result
-            // 
-            this.lbl_Result.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_Result.Location = new System.Drawing.Point(359, 87);
-            this.lbl_Result.Name = "lbl_Result";
-            this.lbl_Result.Size = new System.Drawing.Size(215, 56);
-            this.lbl_Result.TabIndex = 27;
-            // 
-            // textBox_ex5
-            // 
-            this.textBox_ex5.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_ex5.Location = new System.Drawing.Point(62, 212);
-            this.textBox_ex5.Name = "textBox_ex5";
-            this.textBox_ex5.Size = new System.Drawing.Size(103, 35);
-            this.textBox_ex5.TabIndex = 23;
-            // 
-            // lbl_ex5
-            // 
-            this.lbl_ex5.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl_ex5.Location = new System.Drawing.Point(57, 125);
-            this.lbl_ex5.Name = "lbl_ex5";
-            this.lbl_ex5.Size = new System.Drawing.Size(636, 51);
-            this.lbl_ex5.TabIndex = 22;
-            this.lbl_ex5.Text = "Вычислить значение выражения 7 5 2 - 4 * +. ";
-            // 
             // Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -684,7 +694,7 @@
             this.Controls.Add(this.groupBox_Inform);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Test";
-            this.Text = "Form1";
+            this.Text = "Тест";
             this.Load += new System.EventHandler(this.Test_Load);
             this.groupBox_Interface.ResumeLayout(false);
             this.groupBox_Inform.ResumeLayout(false);

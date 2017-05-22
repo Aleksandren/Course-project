@@ -114,12 +114,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\Help.chm" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <Resource Include="Resources\Help.chm" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -136,6 +136,19 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,13 +1,7 @@
 ﻿//Медведский А.В. 52492 Трансляция и вычисление произвольных арифметических выражений. 
 // Форма с тестами.
+
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Course_project
@@ -84,7 +78,6 @@ namespace Course_project
                         groupBox_Question5.Visible = false;
                         groupBox_TestOver.Visible = true;
                         break;
-
                 }
             }
         }
